@@ -1,0 +1,26 @@
+### Create a new issue
+POST http://localhost:3000/issues
+content-type: application/json
+
+{
+	"tite": "new issue",
+	"description": "created 1 minute ago"
+}
+
+### Find a particular issue with a given ID
+GET http://localhost:3000/issues/1
+
+
+### Update an issue
+PUT http://localhost:3000/issues/2
+content-type: application/json
+
+{
+	"tite": "new issue",
+	"description": "created 2 minute ago"
+}
+
+
+### Delete a issue given id
+DELETE http://localhost:3000/issues/1
+
